@@ -9,4 +9,17 @@ Since I cannot detect for the moment which app is calling this plugin all apps w
 
 In other words this is **just for testing** right now!
 
+If you want to **test and _not_ use** the current implementation please add this repo as dependency (just the last 4 lines) to your `pubspec.yaml`:
+
+```yaml
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_secure_storage: ^3.3.1+1
+  # Experimental unsecure windows implementation
+  flutter_secure_storage_windows:
+    git:
+      url: https://github.com/rekire/flutter_secure_storage_windows.git
+      ref: develop
+```
 [flutter_secure_storage]: https://github.com/mogol/flutter_secure_storage
